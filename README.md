@@ -1,10 +1,11 @@
-**This repo is supposed to used as config by NvChad users!**
+# My nvim config using nvchad
 
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
+## LSPs
 
-# Credits
+Requires to have these servers:
+```
+brew install lua-language-server
+go install golang.org/x/tools/gopls@latest
+```
 
-1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
-# nvchad
+Uses Mason for LSPs configurations, run `:MasonInstallAll` while in neovim
