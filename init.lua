@@ -33,6 +33,9 @@ require "options"
 require "custom"
 require "nvchad.autocmds"
 
+-- vim.cmd([[colorscheme monokai-pro]])
+
+
 vim.schedule(function()
   require "mappings"
 end)
