@@ -3,7 +3,8 @@ return {
     "ggandor/leap.nvim",
     lazy = false,
     config = function()
-      require('leap').add_default_mappings()
+      -- require('leap').add_default_mappings()
+      require('leap')
     end
   }
 }

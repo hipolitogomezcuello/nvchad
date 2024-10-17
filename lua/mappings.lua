@@ -1,7 +1,5 @@
 require "nvchad.mappings"
 
--- add yours here
-
 local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
@@ -11,6 +9,7 @@ map( "n", "<c-j>", "<cmd>TmuxNavigateDown<cr>" )
 map( "n", "<c-k>", "<cmd>TmuxNavigateUp<cr>" )
 map( "n", "<c-l>", "<cmd>TmuxNavigateRight<cr>" )
 map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+map("n", "<leader>s", "<Plug>(leap)")
 -- map({ "n", "x", "o"}, "<leader>ss", "<Plug>(leap)")
 -- map({'n', 'x', 'o'}, 's',  '<Plug>(leap-forward)')
 -- map({'n', 'x', 'o'}, 'S',  '<Plug>(leap-backward)')
